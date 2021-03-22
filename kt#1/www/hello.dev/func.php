@@ -3,11 +3,11 @@ $year=$_GET['Year'];
 $text="";
 if (is_numeric($year)) {
     if ($year % 400 == 0 or $year % 100 == 0 or $year % 4 == 0) {
-        $text = " год високосный";}
+        $text = " ДА";}
     else {
-        $text = " год не високосный";}}
+        $text = " НЕТ";}}
 else {
-    $text = "  Неверные данные";}
+    $text = " ОШИБКА ВО ВХОДНЫХ ДАННЫХ";}
 echo $year;
 echo "$text";
 ?> 
